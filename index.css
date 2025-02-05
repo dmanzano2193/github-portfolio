@@ -512,16 +512,17 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
     display: flex;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo.original {
-    filter: none; /* Mantiene el color original para este logo */
+    /* Elimina el filtro aquí para que no afecte a todos los logos */
 }
 
 .client__logo {
     height: 6.5rem;
     max-width: 18rem;
+    filter: invert(100%) grayscale(100%) opacity(.8); /* Aplica filtro a todos los logos */
+}
+
+.client__logo.original {
+    filter: none !important; /* Quita el filtro para el logo de Lab-Dat */
 }
 
 @media(max-width: 1240px) {
