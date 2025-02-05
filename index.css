@@ -515,8 +515,8 @@ body:not(.user-is-tabbing) a:focus {
     filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
-.client__logo:first-of-type {
-    filter: none; /* Elimina el filtro solo para el primer logo */
+.client__logo.original {
+    filter: none; /* Mantiene el color original para este logo */
 }
 
 .client__logo {
