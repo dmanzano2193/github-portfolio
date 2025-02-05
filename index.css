@@ -511,7 +511,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra los logos */
+    gap: 3rem; /* Espacio entre ellos, ajustable */
     filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
